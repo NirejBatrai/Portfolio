@@ -1,7 +1,17 @@
 import React from "react";
 
+import PageHeaderContent from "../PageHeaderContent/PageHeaderContent";
+import { BsInfoCircleFill } from "react-icons/bs";
+
 function Contact() {
-  return <div>NIgggga</div>;
+  return (
+    <section id='contact' className='contact'>
+      <PageHeaderContent
+        headerText='My Contact'
+        icon={<BsInfoCircleFill size={40} />}
+      />
+    </section>
+  );
 }
 
 export default Contact;
