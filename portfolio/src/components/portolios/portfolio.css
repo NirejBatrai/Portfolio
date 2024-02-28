@@ -1,0 +1,94 @@
+.portfolio_content {
+  padding: 20px;
+  width: 100%;
+}
+
+.portfolio_content_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding-top: 30px;
+}
+.portfolio_content_cards_item {
+  height: 366;
+  cursor: pointer;
+  position: relative;
+}
+.portfolio_content_cards_item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio_content_cards_item_img_wrapper {
+  height: 180px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.portfolio_content_cards_item_img_wrapper a {
+  display: block;
+  height: 100%;
+}
+
+.portfolio_content_cards_item_img_wrapper img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  margin-top: 20px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--yelllow-theme-main-color);
+  margin-top: 20px;
+}
+.overlay div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay p {
+  color: black;
+  margin: 0px;
+  font-size: 2rem;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typingEffect 0.5s steps(30, end);
+}
+.overlay button {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background: transparent;
+  color: black;
+  border: 1.5px solid black;
+  border-radius: 4px;
+  font-weight: 400;
+}
+
+@keyframes typingEffect {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .portfolio_content_filter > li {
+    font-size: 11px;
+  }
+  .portfolio_content_cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
