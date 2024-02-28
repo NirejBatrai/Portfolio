@@ -1,7 +1,7 @@
 import React from "react";
 
 import PageHeaderContent from "../PageHeaderContent/PageHeaderContent";
-import { BsInfoCircleFill } from "react-icons/bs";
+import { IoDocumentsOutline } from "react-icons/io5";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -17,7 +17,7 @@ function Resume() {
     <section id='resume' className='resume'>
       <PageHeaderContent
         headerText='My Resume'
-        icon={<BsInfoCircleFill size={40} />}
+        icon={<IoDocumentsOutline size={40} />}
       />
 
       <div className='timeline'>
