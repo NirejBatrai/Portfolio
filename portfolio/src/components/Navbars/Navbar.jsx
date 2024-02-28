@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import logo from "../../assets/lifesGood.svg";
+import logo from "../../assets/lg.png";
 import { Link, useAsyncError } from "react-router-dom";
 
 import { HiX } from "react-icons/hi";
@@ -45,7 +45,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='nav_container'>
           <Link to={"/"} className='navbar_container_logo'>
-            <img style={{ width: "80px" }} src={logo} alt='' />
+            <img style={{ width: "50px" }} src={logo} alt='' />
           </Link>
         </div>
         <ul className={`navbar_container_menu ${toggleIcon ? "active" : ""}`}>
