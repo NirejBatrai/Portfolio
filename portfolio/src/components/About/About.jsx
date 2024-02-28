@@ -3,9 +3,9 @@ import PageHeaderContent from "../PageHeaderContent/PageHeaderContent";
 import { BsInfoCircleFill } from "react-icons/bs";
 import { Animate } from "react-simple-animate";
 import "./About.css";
-import { FaLinkedinIn } from "react-icons/fa";
+import { BsDatabaseFillAdd } from "react-icons/bs";
 import { SiGmail } from "react-icons/si";
-import { IoMdContact } from "react-icons/io";
+import { FaHtml5 } from "react-icons/fa";
 import { DiJsBadge } from "react-icons/di";
 import { FaReact } from "react-icons/fa";
 import { TbBrandNodejs } from "react-icons/tb";
@@ -58,7 +58,7 @@ function About() {
             }}
           >
             <h3>Front End and Back End Developer</h3>
-            <p>{jobSummary}</p>
+            <p className='jobsummary'>{jobSummary}</p>
           </Animate>
           <Animate
             play
@@ -101,16 +101,13 @@ function About() {
                 <SiGmail size={55} color='var(  --yelllow-theme-main-color)' />
               </div>
               <div>
-                <FaLinkedinIn
+                <BsDatabaseFillAdd
                   size={57}
                   color='var(  --yelllow-theme-main-color)'
                 />
               </div>
               <div>
-                <IoMdContact
-                  size={60}
-                  color='var(  --yelllow-theme-main-color)'
-                />
+                <FaHtml5 size={60} color='var(  --yelllow-theme-main-color)' />
               </div>
               <div>
                 <DiJsBadge
