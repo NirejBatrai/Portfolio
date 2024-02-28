@@ -1,0 +1,40 @@
+.contact_content {
+  padding: 20px;
+}
+
+.contact_content_header-text {
+  color: var(--yellow-theme-sub-text-color);
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.5px;
+  position: relative;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--yellow-theme-color);
+}
+.contact_content_header-text::before,
+.contact_content_header-text::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 5px;
+  background-color: var(--yelllow-theme-main-color);
+  bottom: -1px;
+}
+.contact_content_header-text::before {
+  left: 0;
+}
+.contact_content_header-text::after {
+  right: 0;
+}
+.contact_content_form {
+  margin-top: 30px;
+}
+.contact_content_form_controlswrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 30px;
+}
