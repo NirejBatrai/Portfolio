@@ -43,7 +43,12 @@ function Contact() {
           <div className='contact_content_form'>
             <div className='contact_content_form_controlswrapper'>
               <div>
-                <input required name='name' className='inputname' type='text' />
+                <input
+                  required
+                  name='name'
+                  className='inputName'
+                  type={"text"}
+                />
                 <label htmlFor='name' className='namelabel'>
                   Name
                 </label>
@@ -54,17 +59,17 @@ function Contact() {
                   required
                   name='email'
                   className='inputEmail'
-                  type='text'
+                  type={"text"}
                 />
-                <label htmlFor='email' className='emailabel'>
+                <label htmlFor='email' className='emaillabel'>
                   Email
                 </label>
               </div>
               <div>
                 <textarea
                   name='description'
-                  className='inputdescripion'
-                  type='text'
+                  className='inputDescripion'
+                  type={"text"}
                   rows='5'
                 />
                 <label htmlFor='description' className='descriptionlabel'>
@@ -72,7 +77,7 @@ function Contact() {
                 </label>
               </div>
             </div>
-            <button>Submit</button>
+            <button className='submit-btn'>Submit</button>
           </div>
         </Animate>
       </div>
