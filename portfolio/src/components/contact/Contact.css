@@ -12,7 +12,7 @@
   position: relative;
   text-transform: uppercase;
   padding: 5px 10px;
-  border-bottom: 2px solid var(--yellow-theme-color);
+  border-bottom: 2px solid var(--yellow-theme-main- color);
 }
 .contact_content_header-text::before,
 .contact_content_header-text::after {
@@ -29,6 +29,7 @@
 .contact_content_header-text::after {
   right: 0;
 }
+
 .contact_content_form {
   margin-top: 30px;
 }
@@ -37,4 +38,73 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 30px;
+}
+.contact_content_form_controlswrapper div {
+  position: relative;
+}
+
+.inputName,
+.inputEmail,
+.inputDescripion {
+  width: 100%;
+  border: 2px solid var(--yelllow-theme-main-color);
+  padding: 12px;
+  transition: all 0.5s ease;
+  position: relative;
+  background-color: transparent;
+  color: var(--yellow-theme-sub-text-color);
+}
+
+.namelabel,
+.emaillabel,
+.descriptionlabel {
+  font-weight: 500;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  transition: all 0.2s ease;
+  color: var(--yellow-theme-sub-text-color);
+  font-size: 16px;
+}
+
+.inputName:focus,
+.inputEmail:focus,
+.inputDescripion:focus {
+  outline: none;
+}
+
+.inputName:focus + .namelabel,
+.inputName:valid + .namelabel,
+.inputEmail:focus + .emaillabel,
+.inputEmail:valid + .emaillabel,
+.inputDescripion:focus + .descriptionlabel,
+.inputDescripion:valid + .descriptionlabel {
+  font-size: 18px;
+  top: -25px;
+  left: 0px;
+}
+
+.submit-btn {
+  cursor: pointer;
+  padding: 10px 70px;
+  font-size: 2rem;
+  background: transparent;
+  color: var(--yellow-theme-sub-text-color);
+  border: 1.5px solid var(--yelllow-theme-main-color);
+  border-radius: 4px;
+  font-weight: 400;
+}
+.submit-btn:hover {
+  color: #000;
+  background-color: var(--yelllow-theme-main-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .contact_content_form {
+    text-align: center;
+  }
+
+  .contact_content_form_controlswrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
