@@ -74,9 +74,7 @@ function Portfolio() {
               onMouseLeave={() => handleHover(null)}
             >
               <div className='portfolio_content_cards_item_img_wrapper'>
-                <Link>
-                  <img alt='dummy data' src={item.image} />
-                </Link>
+                <img alt='dummy data' src={item.image} />
               </div>
               <div className='overlay'>
                 {index === hoveredValue && (
