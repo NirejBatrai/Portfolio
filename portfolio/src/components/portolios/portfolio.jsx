@@ -7,7 +7,7 @@ import Tictactoe from "../../assets/tic.png";
 import weatherdash from "../../assets/weatherdashboard.png";
 import commingsoonImg from "../../assets/commingsoon1.png";
 import "./portfolio.css";
-
+import { Link } from "react-router-dom";
 const portfolioData = [
   {
     id: 1,
@@ -74,9 +74,9 @@ function Portfolio() {
               onMouseLeave={() => handleHover(null)}
             >
               <div className='portfolio_content_cards_item_img_wrapper'>
-                <a>
+                <Link>
                   <img alt='dummy data' src={item.image} />
-                </a>
+                </Link>
               </div>
               <div className='overlay'>
                 {index === hoveredValue && (
